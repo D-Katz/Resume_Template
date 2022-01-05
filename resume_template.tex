@@ -1,0 +1,154 @@
+% First Last Resume
+% Accurate as of Month Date Year
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{tabularx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{table}[]
+    \begin{tabularx}{\textwidth}{Xr}
+        \Huge{First Last}
+        &
+        \begin{tabular}[c]{@{}r@{}}
+            \href{mailto:email@gmail.com}{email@gmail.com} \\
+            \href{tel:12893800100}{(111)222-3333}| Location, Country\\
+            \href{http://google.ca}{personal site use \% to comment me out} |
+            \href{http://github.com}{Github link} |
+            \href{http://linkedin.com}{LinkedIn link}
+        \end{tabular}
+    \end{tabularx}\vspace{-25pt}
+\end{table}
+
+%-----------SKILLS-----------------
+\shorterSection{Technical Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+        \textbf{Programming Languages}{: Python, C++ etc etc add sub categories to spread out your skills between the different types of software and skills you have :)}
+    } \vspace{-5pt}
+
+    \item{
+        \textbf{Subcategory}{:other skills}
+    } \vspace{-5pt}
+
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+ \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Company Name}{Location}
+      {Role (Tools you used)}{Start Date - End Date}
+      \resumeItemListStart
+      \resumeItem{What you are doing at your job}
+      \resumeItem{Something else you accomplished at your job}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\shorterSection{Personal Projects}
+  \resumeSubHeadingListStart
+      \resumeSubItem{\href{https://github.com}{\textbf{Project Title}}}
+  {Small Summary as it is \\
+     \emph{Tools you used}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Describe a functionality of your project
+            \item Describe another functionality of your project
+        \end{itemize}
+     }
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Your University}{Location}
+      {Honors Bachelor of ???, Minor?}{Expected Graduation 20XX}{
+
+      \hspace{-12pt} GPA X.??/4.00 \\
+      \hspace{-12pt} Scholarships/Awards:}
+
+  \resumeSubHeadingListEnd
+
+\end{document}
